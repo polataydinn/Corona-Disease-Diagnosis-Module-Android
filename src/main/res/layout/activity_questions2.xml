@@ -6,24 +6,21 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="match_parent"
+        android:background="@color/light_green">
 
         <TextView
             android:id="@+id/hapsirmaTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="54dp"
-            android:layout_marginEnd="273dp"
-            android:layout_marginRight="273dp"
-            android:text="@string/hapsirma" />
+            android:layout_marginEnd="29dp"
+            android:layout_toStartOf="@+id/spinner6"
+            android:text="@string/hapsirma"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/burunAkintiTextView"
@@ -31,15 +28,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/hapsirmaTextView"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="54dp"
-            android:layout_marginEnd="273dp"
-            android:layout_marginRight="273dp"
-            android:text="@string/burun_akintisi" />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="29dp"
+            android:layout_toStartOf="@+id/spinner7"
+            android:text="@string/burun_akintisi"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/burunTikanikligiTextView"
@@ -47,31 +41,25 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/burunAkintiTextView"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="54dp"
-            android:layout_marginEnd="273dp"
-            android:layout_marginRight="273dp"
-            android:text="@string/burun_tikanikligi" />
+            android:layout_marginEnd="29dp"
+            android:layout_toStartOf="@+id/spinner8"
+            android:text="@string/burun_tikanikligi"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/sulanmaTextView"
-            android:layout_width="121dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/burunTikanikligiTextView"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="54dp"
-            android:layout_marginEnd="258dp"
-            android:layout_marginRight="258dp"
-            android:text="@string/gozlerde_sulanma" />
+            android:layout_marginEnd="29dp"
+            android:layout_toStartOf="@+id/spinner9"
+            android:text="@string/gozlerde_sulanma"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/bogazAgriTextView"
@@ -79,15 +67,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/sulanmaTextView"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="54dp"
-            android:layout_marginEnd="273dp"
-            android:layout_marginRight="273dp"
-            android:text="@string/bogaz_agrisi" />
+            android:layout_marginEnd="29dp"
+            android:layout_toStartOf="@+id/spinner10"
+            android:text="@string/bogaz_agrisi"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/ishalTextView"
@@ -95,86 +80,71 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/bogazAgriTextView"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="54dp"
-            android:layout_marginEnd="273dp"
-            android:layout_marginRight="273dp"
-            android:text="@string/ishal" />
+            android:layout_marginEnd="29dp"
+            android:layout_toStartOf="@+id/spinner11"
+            android:text="@string/ishal"
+            android:textStyle="bold"/>
 
         <Spinner
             android:id="@+id/spinner6"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="49dp"
-            android:layout_marginRight="49dp"
+            android:layout_marginEnd="25dp"
             android:entries="@array/questionAnswers" />
 
         <Spinner
             android:id="@+id/spinner7"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/spinner6"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="49dp"
-            android:layout_marginRight="49dp"
+            android:layout_marginEnd="30dp"
             android:entries="@array/questionAnswers" />
 
         <Spinner
             android:id="@+id/spinner8"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/spinner7"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="49dp"
-            android:layout_marginRight="49dp"
+            android:layout_marginEnd="25dp"
             android:entries="@array/questionAnswers" />
 
         <Spinner
             android:id="@+id/spinner9"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/spinner8"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="49dp"
-            android:layout_marginRight="49dp"
+            android:layout_marginEnd="25dp"
             android:entries="@array/questionAnswers" />
 
         <Spinner
             android:id="@+id/spinner10"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/spinner9"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="49dp"
-            android:layout_marginRight="49dp"
+            android:layout_marginEnd="25dp"
             android:entries="@array/questionAnswers" />
 
         <Spinner
             android:id="@+id/spinner11"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/spinner10"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="49dp"
-            android:layout_marginRight="49dp"
+            android:layout_marginEnd="25dp"
             android:entries="@array/questionAnswers" />
 
         <Button
@@ -183,10 +153,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/spinner11"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginTop="54dp"
-            android:layout_marginEnd="91dp"
-            android:layout_marginRight="91dp"
+            android:layout_marginEnd="70dp"
             android:text="@string/sonuc" />
 
     </RelativeLayout>

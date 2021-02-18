@@ -18,9 +18,5 @@ public abstract class CONST {
     public static float gripYuzde;
     public static float alerjiYuzde;
     public static float koronaYuzde;
-    public static boolean koronaBool;
-    public static boolean sogukAlginligiBool;
-    public static boolean gripBool;
-    public static boolean alerjiBool;
 }
 
