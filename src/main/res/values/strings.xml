@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Corona-Disease-Module</string>
+    <string name="ates">Ateş</string>
+    <string name="yorgunluk">Yorgunluk</string>
+    <string name="kuru_oksuruk">Kuru Öksürük</string>
+    <string name="solunum_zorlugu">Solunum Zorluğu</string>
+    <string name="oksuruk">Öksürük</string>
+    <string name="agri">Ağrı</string>
+    <string name="hapsirma">Hapşırma</string>
+    <string name="burun_akintisi">Burun Akıntısı</string>
+    <string name="burun_tikanikligi">Burun Tıkanıklığı</string>
+    <string name="gozlerde_sulanma">Gözlerde Sulanma</string>
+    <string name="bogaz_agrisi">Boğaz Ağrısı</string>
+    <string name="ishal">İshal</string>
+    <string name="devam">Devam</string>
+    <string name="sonuc">Sonuç</string>
+    <string-array name="questionAnswers">
+        <item>Yok</item>
+        <item>Nadiren</item>
+        <item>Bazen</item>
+        <item>Sık</item>
+        <item>Şiddetli</item>
+    </string-array>
+</resources>

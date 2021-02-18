@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".QuestionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/hapsirmaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="273dp"
+            android:layout_marginRight="273dp"
+            android:text="@string/hapsirma" />
+
+        <TextView
+            android:id="@+id/burunAkintiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hapsirmaTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="273dp"
+            android:layout_marginRight="273dp"
+            android:text="@string/burun_akintisi" />
+
+        <TextView
+            android:id="@+id/burunTikanikligiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/burunAkintiTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="273dp"
+            android:layout_marginRight="273dp"
+            android:text="@string/burun_tikanikligi" />
+
+        <TextView
+            android:id="@+id/sulanmaTextView"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/burunTikanikligiTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="258dp"
+            android:layout_marginRight="258dp"
+            android:text="@string/gozlerde_sulanma" />
+
+        <TextView
+            android:id="@+id/bogazAgriTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sulanmaTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="273dp"
+            android:layout_marginRight="273dp"
+            android:text="@string/bogaz_agrisi" />
+
+        <TextView
+            android:id="@+id/ishalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bogazAgriTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="273dp"
+            android:layout_marginRight="273dp"
+            android:text="@string/ishal" />
+
+        <Spinner
+            android:id="@+id/spinner6"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Spinner
+            android:id="@+id/spinner7"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner6"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Spinner
+            android:id="@+id/spinner8"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner7"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Spinner
+            android:id="@+id/spinner9"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner8"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Spinner
+            android:id="@+id/spinner10"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner9"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Spinner
+            android:id="@+id/spinner11"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner10"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Button
+            android:id="@+id/getResultsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner11"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginRight="91dp"
+            android:text="@string/sonuc" />
+
+    </RelativeLayout>
+</layout>

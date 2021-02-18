@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".QuestionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/atesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="273dp"
+            android:layout_marginRight="273dp"
+            android:text="@string/ates" />
+
+        <TextView
+            android:id="@+id/yorgunlukTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/atesTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="273dp"
+            android:layout_marginRight="273dp"
+            android:text="@string/yorgunluk" />
+
+        <TextView
+            android:id="@+id/kuruOksurukTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yorgunlukTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="273dp"
+            android:layout_marginRight="273dp"
+            android:text="@string/kuru_oksuruk" />
+
+        <TextView
+            android:id="@+id/solunumTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kuruOksurukTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="272dp"
+            android:layout_marginRight="272dp"
+            android:text="@string/solunum_zorlugu" />
+
+        <TextView
+            android:id="@+id/oksurukTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/solunumTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="270dp"
+            android:layout_marginRight="270dp"
+            android:text="@string/oksuruk" />
+
+        <TextView
+            android:id="@+id/agriTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/oksurukTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="273dp"
+            android:layout_marginRight="273dp"
+            android:text="@string/agri" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Spinner
+            android:id="@+id/spinner5"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:entries="@array/questionAnswers" />
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginRight="91dp"
+            android:text="@string/devam" />
+
+    </RelativeLayout>
+</layout>

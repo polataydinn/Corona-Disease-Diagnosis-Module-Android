@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:id="@+id/welcomeScreenId">
+
+        <TextView
+            android:id="@+id/koronaBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_above="@+id/lottie_layer_name"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="83dp"
+            android:layout_marginBottom="-33dp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="32dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_layer_name"
+            android:layout_width="410dp"
+            android:layout_height="481dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_centerInParent="true"
+            app:lottie_rawRes="@raw/stay_home" />
+
+        <TextView
+            android:id="@+id/devamYazi"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/lottie_layer_name"
+            android:textSize="18dp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:text="Devam Etmek İçin Ekrana Dokunun" />
+
+
+    </RelativeLayout>
+
+</layout>
