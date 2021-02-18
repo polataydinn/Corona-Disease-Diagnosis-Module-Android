@@ -157,5 +157,20 @@
             android:layout_marginEnd="70dp"
             android:text="@string/devam" />
 
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/bannerAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/continueButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="102dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="27dp"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-2195346132205819/9897657239" />
+
+
     </RelativeLayout>
 </layout>

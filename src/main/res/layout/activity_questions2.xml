@@ -157,5 +157,19 @@
             android:layout_marginEnd="70dp"
             android:text="@string/sonuc" />
 
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/bannerAd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getResultsButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="101dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="30dp"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-2195346132205819/9965299364" />
+
     </RelativeLayout>
 </layout>

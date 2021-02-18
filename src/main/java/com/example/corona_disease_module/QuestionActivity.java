@@ -12,6 +12,10 @@ import com.anychart.AnyChartView;
 import com.anychart.chart.common.dataentry.DataEntry;
 import com.anychart.chart.common.dataentry.ValueDataEntry;
 import com.anychart.charts.Pie;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,11 +23,22 @@ import java.util.List;
 public class QuestionActivity extends AppCompatActivity{
 
     String[] hastaliklar = {"Korona","Soğuk Algınlığı","Grip","Alerji"};
+    AdView adView,adView1;
+    InterstitialAd interstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
+        adView = findViewById(R.id.bannerAd);
+        MobileAds.initialize(this,"ca-app-pub-2195346132205819~1296471857");
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
+        interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId("ca-app-pub-2195346132205819/6026054359");
+        interstitialAd.loadAd(new AdRequest.Builder().build());
 
         Spinner spinner = findViewById(R.id.spinner);
         Spinner spinner1 = findViewById(R.id.spinner1);
@@ -43,7 +58,8 @@ public class QuestionActivity extends AppCompatActivity{
                 CONST.oksurukResult = spinner4.getSelectedItemPosition();
                 CONST.agriResult = spinner5.getSelectedItemPosition();
                 setContentView(R.layout.activity_questions2);
-
+                adView1 = findViewById(R.id.bannerAd1);
+                adView1.loadAd(adRequest);
                 Button resultButton = findViewById(R.id.getResultsButton);
                 resultButton.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -60,6 +76,7 @@ public class QuestionActivity extends AppCompatActivity{
                         CONST.sulanmaResult = spinner9.getSelectedItemPosition();
                         CONST.bogazAgriResult = spinner10.getSelectedItemPosition();
                         CONST.ishalResult = spinner11.getSelectedItemPosition();
+                        interstitialAd.show();
                         setContentView(R.layout.result_layout);
                         koronaTani();
                         sogukTani();
