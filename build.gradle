@@ -8,11 +8,11 @@ android {
     dataBinding.enabled = true
 
     defaultConfig {
-        applicationId "com.example.corona_disease_module"
+        applicationId "com.octavia.corona_disease_module"
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.2"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
